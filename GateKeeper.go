@@ -20,6 +20,32 @@ func timeCheck() {
 	}
 }
 
+func licenseCheck() {
+
+	// Registered licence plates
+	licenseOne := "645A990"
+	licenseTwo := "DYP990"
+	licenseThree := "L0D090"
+	licenseFour := "SUV003"
+
+	var licensePlate string // Predefined variable
+	fmt.Print("Uw kenteken: ")
+	fmt.Scan(&licensePlate)
+
+	if licensePlate == licenseOne {
+		timeCheck()
+	} else if licensePlate == licenseTwo {
+		timeCheck()
+	} else if licensePlate == licenseThree {
+		timeCheck()
+	} else if licensePlate == licenseFour {
+		timeCheck()
+	} else {
+		fmt.Println("U heeft helaas geen toegang tot het parkeerterrein.")
+	}
+
+}
+
 func main() {
-	timeCheck()
+	licenseCheck()
 }
